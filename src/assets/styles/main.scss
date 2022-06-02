@@ -1,0 +1,87 @@
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	background-color: #374151;
+}
+
+* {
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+.title {
+    font-size: 2.5rem;
+	font-weight: 700;
+	color: #6B7280;
+	margin-bottom: 1rem;
+}
+
+.form {
+    display: flex;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.task-list {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form__input {
+    flex: 1 1 0%;
+	background-color: #1F2937;
+	padding: 1rem;
+	border-radius: 1rem;
+	margin-right: 1rem;
+	color: #EEE;
+	font-size: 1.25rem;
+
+    &::placeholder {
+        color: #6B7280;
+    }
+}
+
+.btn {
+    color: #EC4899;
+    border: none;
+	font-size: 1.25rem;
+	font-weight: 700;
+	background-image: linear-gradient(to right, #EC4899, #8B5CF6);
+    background-clip: text;
+	-webkit-text-fill-color: transparent;
+	cursor: pointer;
+	transition: 0.4s;
+
+    &:hover {
+        opacity: .6;
+    }
+}
+
+.task {
+    display: flex;
+	background-color: #111827;
+	padding: 1rem;
+	border-radius: 1rem;
+	margin-bottom: 1rem;
+    align-items: center;
+}
+
+.task-text {
+    margin-left: 5px;
+    color: #fff;
+    align-items: center;
+}
+
+.task-text.done {
+    text-decoration: line-through;
+}
+
+.task-btn {
+    margin-left: auto;
+}
+
+.btn-wrapper {
+    margin: 20px 0;
+}
